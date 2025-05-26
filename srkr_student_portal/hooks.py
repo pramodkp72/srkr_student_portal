@@ -242,3 +242,15 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+# Route overrides
+website_route_rules = [
+    {"from_route": "/student", "to_route": "/custom-student"},
+]
+
+# Override API endpoints
+override_whitelisted_methods = {
+    "education.education.api.get_user_info": "srkr_student_portal.education.api.get_user_info",
+    "education.education.api.get_student_details": "srkr_student_portal.education.api.get_student_details",
+    "education.api.get_user_info": "srkr_student_portal.api.get_user_info",
+}
+
