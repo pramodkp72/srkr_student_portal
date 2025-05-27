@@ -9,7 +9,7 @@ export const studentStore = defineStore('education-student', () => {
 	const studentGroups = ref([])
 
 	const student = createResource({
-		url: 'srkr_student_portal.education.api.get_student_info',
+		url: 'education.education.api.get_student_info',
 		onSuccess(info) {
 			if (!info) {
 				window.location.href = "/app"

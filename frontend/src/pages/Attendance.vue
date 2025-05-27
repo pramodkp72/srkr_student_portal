@@ -113,7 +113,7 @@ const attendanceStatus = {
 }
 
 const attendanceResource = createResource({
-  url: 'srkr_student_portal.education.api.get_student_attendance',
+  url: 'education.education.api.get_student_attendance',
   params: {
     student_group: selectedGroup.value,
     student: studentInfo.name,
@@ -144,7 +144,7 @@ const attendanceResource = createResource({
 })
 
 const applyLeave = createResource({
-  url: 'srkr_student_portal.education.api.apply_leave',
+  url: 'education.education.api.apply_leave',
   params: {
     leave_data: newLeave,
     program_name: programName.value,

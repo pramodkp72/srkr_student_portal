@@ -91,7 +91,7 @@ const isSidebarCollapsed = useStorage('sidebar_is_collapsed', false)
 
 // create a resource which call the function get_school_abbr_logo in api file using createResource
 const educationSettings = createResource({	
-	url: 'srkr_student_portal.education.api.get_school_abbr_logo',
+	url: 'education.education.api.get_school_abbr_logo',
 	auto: true,
 })
 
