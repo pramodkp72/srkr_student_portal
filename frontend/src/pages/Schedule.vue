@@ -26,7 +26,7 @@ const formatTime = (timeStr) => {
 }
 
 const scheduleResource = createResource({
-  url: 'srkr_student_portal.education.api.get_course_schedule_for_student',
+  url: 'education.education.api.get_course_schedule_for_student',
   params: {
     program_name: programName.value,
     student_groups: studentGroup.value,

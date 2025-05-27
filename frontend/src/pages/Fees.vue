@@ -92,7 +92,7 @@ const { getStudentInfo } = studentStore()
 let studentInfo = getStudentInfo().value
 
 const feesResource = createResource({
-  url: 'srkr_student_portal.education.api.get_student_invoices',
+  url: 'education.education.api.get_student_invoices',
   params: {
     student: studentInfo.name,
   },

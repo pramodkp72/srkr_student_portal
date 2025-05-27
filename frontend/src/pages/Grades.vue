@@ -67,7 +67,7 @@ const tableData = ref({
 })
 
 const student_programs = createResource({
-  url: 'srkr_student_portal.education.api.get_student_programs',
+  url: 'education.education.api.get_student_programs',
   makeParams() {
     return {
       // student: studentInfo.value?.name
